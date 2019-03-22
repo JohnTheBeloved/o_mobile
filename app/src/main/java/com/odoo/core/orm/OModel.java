@@ -884,6 +884,7 @@ public class OModel implements ISyncServiceListener {
     }
 
     public List<ODataRow> query(String query, String[] args) {
+        Log.d(TAG, "Query is...." + query);
         List<ODataRow> rows = new ArrayList<>();
         SQLiteDatabase db = getReadableDatabase();
         Cursor cr = db.rawQuery(query, args);
