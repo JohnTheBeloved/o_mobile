@@ -6,4 +6,7 @@
     <dimen name="default_8dp">8dp</dimen>
     <dimen name="default_16dp">16dp</dimen>
     <dimen name="app_bar_top_padding">0dp</dimen>
+    <dimen name="default_88dp">88dp</dimen>
+    <dimen name="button_edge_radius">20dp</dimen>
+    <dimen name="default_50_dp">50dp</dimen>
 </resources>

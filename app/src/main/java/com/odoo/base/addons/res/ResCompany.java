@@ -69,6 +69,5 @@ public class ResCompany extends OModel {
         ODataRow row = company.browse(company.selectRowId(company.
                 getUser().getCompanyId()));
         return row.getM2ORecord("currency_id").browse().getInt(OColumn.ROW_ID);
-
     }
 }

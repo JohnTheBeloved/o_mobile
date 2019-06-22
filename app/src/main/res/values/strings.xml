@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AbiRex Medicare Mobile</string>
+    <string name="app_name">PharmaRx</string>
     <string name="sync_label_customers">Customers</string>
     <string name="toast_information_saved">Information Saved</string>
     <string name="toast_image_size_too_large">Image size too large !</string>
@@ -20,4 +20,21 @@
 
     <string name="label_no_product_found">No Product Found !</string>
     <string name="sync_label_products">Products</string>
+
+    <string name="label_no_purchase_found">No Purchase Found !</string>
+    <string name="sync_label_purchases">Purchase</string>
+    <string name="inactive">Inactive</string>
+    <string name="active">Active</string>
+    <string name="all">All</string>
+    <string name="stub_blender">Blender</string>
+    <string name="stub_popular_items">Popular Items</string>
+    <string name="stub_purchase_from_3_vendors">__Purchase from 3 Vendors</string>
+    <string name="stub_thursday_7th_april_2019">__Thursday, 7th, April, 2019</string>
+    <string name="stub_5000_00">5000.00__</string>
+    <string name="stub_7">7</string>
+    <string name="stub_product_name">_Archy Paracetamol (X12)</string>
+    <string name="stub_medication_type">Analgesic</string>
+    <string name="stub_qty">5/10</string>
+    <string name="menu">Menu</string>
+    <string name="stub_price">$25.00</string>
 </resources>

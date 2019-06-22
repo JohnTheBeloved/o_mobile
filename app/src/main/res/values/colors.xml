@@ -47,4 +47,22 @@
     <color name="translucent_scrim_top_center">#0C000000</color>
     <color name="translucent_scrim_bottom">#2A000000</color>
     <color name="translucent_scrim_bottom_center">#0D000000</color>
+
+    <!--Newly Defined Colors-->
+    <color name="colorPrimaryWhite">#ffff</color>
+    <color name="colorPrimaryGrey">#838384</color>
+    <color name="colorSecondaryGrey">#9A9A9A</color>
+
+
+    <!--<color name="colorPrimaryDark">#512DA8</color>-->
+    <!--<color name="colorPrimary">#673AB7</color>-->
+    <color name="colorPrimaryLight">#689f38</color>
+    <color name="colorPrimaryDark">#0f3f3f</color>
+    <color name="colorPrimary">#3d8659</color>
+
+    <color name="colorSecondary">#dfbc49</color>
+    <color name="colorSecondaryDark">#773523</color>
+
+    <color name="colorAccent">#dfbc49</color>
+    <color name="colorBackgroundGrey">#eeeeee</color>
 </resources>

@@ -20,7 +20,7 @@
 package com.odoo.datas;
 
 public class OConstants {
-    public static final String URL_ODOO = "http://192.168.43.181:8069";
+    public static final String URL_ODOO = "http://192.168.88.38:8069";
     public static final String URL_ODOO_RESET_PASSWORD = URL_ODOO + "/web/reset_password";
     public static final String URL_ODOO_SIGN_UP = URL_ODOO + "/web/signup";
     public static final String URL_ODOO_MOBILE_GIT_HUB = "https://github.com/JohnTheBeloved/odoo_mobile";

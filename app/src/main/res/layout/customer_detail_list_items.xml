@@ -31,7 +31,7 @@
                 android:id="@+id/website"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:fieldLabelColor="@color/theme_secondary"
+                app:fieldLabelColor="@color/colorSecondary"
                 app:fieldName="website"
                 app:fieldTextAppearance="?android:textAppearanceMedium"
                 app:iconResource="@drawable/ic_action_universe"></odoo.controls.OField>
@@ -41,7 +41,7 @@
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:fieldLabelColor="@color/theme_secondary"
+                app:fieldLabelColor="@color/colorSecondary"
                 app:fieldName="email"
                 app:fieldTextAppearance="?android:textAppearanceMedium"
                 app:iconResource="@drawable/ic_action_message"></odoo.controls.OField>
@@ -54,7 +54,7 @@
                 android:id="@+id/phone_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:fieldLabelColor="@color/theme_secondary"
+                app:fieldLabelColor="@color/colorSecondary"
                 app:fieldName="phone"
                 app:fieldTextAppearance="?android:textAppearanceMedium"
                 app:iconResource="@drawable/ic_action_phone"></odoo.controls.OField>
@@ -63,7 +63,7 @@
                 android:id="@+id/mobile_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:fieldLabelColor="@color/theme_secondary"
+                app:fieldLabelColor="@color/colorSecondary"
                 app:fieldName="mobile"
                 app:fieldTextAppearance="?android:textAppearanceMedium"
                 app:iconResource="@drawable/ic_action_mobile"></odoo.controls.OField>
@@ -77,7 +77,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:controlLabel="@string/label_address"
-                app:fieldLabelColor="@color/theme_secondary"
+                app:fieldLabelColor="@color/colorSecondary"
                 app:fieldName="full_address"
                 app:fieldTextAppearance="?android:textAppearanceMedium"
                 app:iconResource="@drawable/ic_action_location"></odoo.controls.OField>
@@ -85,14 +85,14 @@
             <odoo.controls.OField
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:fieldLabelColor="@color/theme_secondary"
+                app:fieldLabelColor="@color/colorSecondary"
                 app:fieldName="state_id"
                 app:fieldTextAppearance="?android:textAppearanceMedium"></odoo.controls.OField>
 
             <odoo.controls.OField
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:fieldLabelColor="@color/theme_secondary"
+                app:fieldLabelColor="@color/colorSecondary"
                 app:fieldName="country_id"
                 app:fieldTextAppearance="?android:textAppearanceMedium"></odoo.controls.OField>
 
@@ -103,7 +103,7 @@
             <odoo.controls.OField
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:fieldLabelColor="@color/theme_secondary"
+                app:fieldLabelColor="@color/colorSecondary"
                 app:fieldName="comment"
                 app:fieldTextAppearance="?android:textAppearanceMedium"
                 app:iconResource="@drawable/ic_action_notes_content"></odoo.controls.OField>

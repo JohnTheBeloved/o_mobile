@@ -19,7 +19,7 @@
         <TextView
             android:id="@+id/txvUsername"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/theme_secondary_dark"
+            android:textColor="@color/colorSecondaryDark"
             android:layout_width="match_parent"
             android:layout_marginBottom="@dimen/default_8dp"
             android:fontFamily="@string/font_condensed"

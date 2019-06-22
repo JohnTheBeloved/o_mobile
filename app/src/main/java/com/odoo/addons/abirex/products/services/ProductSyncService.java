@@ -22,7 +22,7 @@ package com.odoo.addons.abirex.products.services;
 import android.content.Context;
 import android.os.Bundle;
 
-import com.odoo.base.addons.product.ProductProduct;
+import com.odoo.base.addons.abirex.dao.ProductProductDao;
 import com.odoo.core.service.OSyncAdapter;
 import com.odoo.core.service.OSyncService;
 import com.odoo.core.support.OUser;
@@ -32,7 +32,7 @@ public class ProductSyncService extends OSyncService {
 
     @Override
     public OSyncAdapter getSyncAdapter(OSyncService service, Context context) {
-        return new OSyncAdapter(context, ProductProduct.class, this, true);
+        return new OSyncAdapter(context, ProductProductDao.class, this, true);
     }
 
     @Override

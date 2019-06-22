@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryWhite"
+    android:paddingTop="@dimen/default_8dp"
+    android:paddingBottom="@dimen/default_16dp"
+    android:paddingStart="@dimen/default_16dp"
+    android:paddingLeft="@dimen/default_16dp"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_product_image"
+            android:src="@drawable/blender"
+            android:contentDescription="@string/stub_blender"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:id="@+id/llInformation"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_product_name"
+                    android:text="_MK-F800"
+                    android:textAppearance="@style/GridItemTitleText"
+                    style="@style/wrapLayout"/>
+                <TextView
+                    android:id="@+id/tv_product_type"
+                    android:text="Panasonic"
+                    style="@style/wrapLayout"/>
+                <RatingBar
+                    android:id="@+id/rb_product_rating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    android:isIndicator="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llProducts"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/ib_product_menu"
+                    android:contentDescription="@string/menu"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    android:paddingTop="@dimen/default_16dp"
+                    style="@style/wrapLayout"
+                    android:layout_gravity="right"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:text="₦1,500"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:paddingRight="@dimen/default_16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

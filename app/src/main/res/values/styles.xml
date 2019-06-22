@@ -12,8 +12,8 @@
     </style>
 
     <style name="AppBar.Dark" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/colorPrimaryDark</item>
     </style>
-
 
     <!-- FIXME: Replace toolbar with appbar.. -->
     <style name="ToolBarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -26,4 +26,73 @@
         <item name="android:layout_height">1dp</item>
         <item name="android:background">#cccccc</item>
     </style>
+
+    <style name="ListTitleText" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#333</item>
+    </style>
+
+    <style name="ListTitleLayout">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ListSubtitleText" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#333</item>
+    </style>
+
+    <style name="ListSubtitleLayout">
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ListInfo" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#333</item>
+    </style>
+
+
+    <style name="ListInfo.Purple" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="GridItemTitleText" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="wrapLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Divider">
+        <item name="android:background">#f0f0f0</item>
+    </style>
+
+    <style name="Divider.Horizontal" parent="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+
+    </style>
+
+    <style name="Divider.Vertical" parent="Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+
+
 </resources>

@@ -88,7 +88,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/theme_primary_dark" />
+                    android:background="@color/colorPrimaryDark" />
 
                 <!-- Username Input -->
                 <LinearLayout
@@ -123,7 +123,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/theme_primary_dark" />
+                    android:background="@color/colorPrimaryDark" />
 
                 <!-- User Password Input -->
                 <LinearLayout
@@ -160,7 +160,7 @@
                     android:id="@+id/layoutBorderDB"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/theme_primary_dark"
+                    android:background="@color/colorPrimaryDark"
                     android:visibility="gone" />
 
 

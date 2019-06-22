@@ -56,7 +56,7 @@ public class ONotificationBuilder {
     private Boolean withVibrate = true;
     private Boolean withLargeIcon = true;
     private Boolean withRingTone = true;
-    private int notification_color = R.color.theme_secondary;
+    private int notification_color = R.color.colorSecondary;
     private int maxProgress = -1;
     private int currentProgress = -1;
     private boolean indeterminate = false;

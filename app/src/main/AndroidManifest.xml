@@ -25,7 +25,7 @@
         android:name="com.odoo.App"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/rx"
         android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity
@@ -127,6 +127,28 @@
         <activity
             android:name="com.odoo.addons.abirex.products.ProductDetails"
             android:windowSoftInputMode="adjustPan" />
+
+
+        <!-- PurchaseList Sync Provider & Service  // -->
+        <provider
+            android:name="com.odoo.addons.abirex.purchase.providers.PurchaseSyncProvider"
+            android:authorities="${applicationId}.core.provider.content.sync.purchase_order"
+            android:label="@string/sync_label_purchases"
+            android:multiprocess="true" />
+
+        <service
+            android:name="com.odoo.addons.abirex.purchase.services.PurchaseSyncService"
+            android:exported="true"
+            android:process=":sync_purchase">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/purchase_sync_adapter" />
+        </service>
+
     </application>
 
 </manifest>

@@ -132,6 +132,12 @@ public class BaseModelProvider extends ContentProvider {
                 } else if (column != null && column.getRelationType() == OColumn.RelationType.ManyToOne) {
                     columns.add(key);
                 }
+                else if(column == null &&
+                        (key.toLowerCase().contains("sum(") ||
+                                key.toLowerCase().contains("count(")  )||
+                        key.toLowerCase().contains("date(")  ){
+                    columns.add(key);
+                }
             }
             columns.addAll(Arrays.asList(OColumn.ROW_ID, "id", "_is_active", "_write_date"));
             return columns.toArray(new String[columns.size()]);

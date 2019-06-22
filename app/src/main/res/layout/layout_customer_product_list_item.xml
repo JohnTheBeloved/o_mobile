@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvProduct"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingLeft="@dimen/default_8dp"
+        android:paddingStart="@dimen/default_8dp"
+        android:paddingRight="@dimen/default_16dp"
+        android:paddingEnd="@dimen/default_16dp"
+        android:paddingTop="@dimen/default_16dp"
+        android:paddingBottom="@dimen/default_8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_product_image"
+        android:src="@drawable/ic_medical_drug_pill"
+        android:layout_width="@dimen/default_50_dp"
+        android:layout_height="@dimen/default_50_dp"
+        android:layout_margin="@dimen/default_8dp"
+        android:layout_marginLeft="@dimen/default_8dp"
+        android:layout_marginStart="@dimen/default_8dp" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_8dp"
+        android:layout_marginStart="@dimen/default_8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            style="@style/ListTitleLayout"
+            android:layout_width="match_parent"
+            android:text="@string/stub_product_name"
+            android:textAppearance="@style/ListTitleText" />
+        <TextView
+            android:id="@+id/tv_product_type"
+            android:text="@string/stub_medication_type"
+            android:textAppearance="@style/ListSubtitleText"
+            style="@style/ListSubtitleLayout"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RatingBar
+                android:id="@+id/rb_product_rating"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/default_16dp"
+                android:layout_marginEnd="@dimen/default_16dp"
+                android:numStars="5"
+                android:stepSize="1"
+                android:rating="2"
+                style="?android:attr/ratingBarStyleSmall"/>
+            <TextView
+                android:id="@+id/tv_product_rating_no"
+                android:fontFamily="@string/font_normal"
+                android:text="@string/stub_qty"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:textAppearance="@style/ListInfo.Purple" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/default_8dp"
+        android:layout_marginStart="@dimen/default_8dp"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/ib_product_menu"
+            android:contentDescription="@string/menu"
+            android:background="@color/colorPrimaryWhite"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"/>
+        <TextView
+            android:id="@+id/tv_price"
+            android:text="@string/stub_price"
+            android:layout_weight="1"
+            android:layout_width="@dimen/default_88dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:gravity="bottom|end"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+    </LinearLayout>
+    <View style="@style/Divider.Horizontal"/>
+</LinearLayout>
+

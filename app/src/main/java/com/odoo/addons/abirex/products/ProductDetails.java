@@ -33,11 +33,9 @@ import android.widget.Toast;
 
 import com.odoo.App;
 import com.odoo.R;
-import com.odoo.addons.abirex.products.Products;
-import com.odoo.addons.abirex.products.utils.ShareUtil;
+import com.odoo.addons.customers.utils.ShareUtil;
+import com.odoo.base.addons.abirex.dao.ProductProductDao;
 import com.odoo.base.addons.ir.feature.OFileManager;
-import com.odoo.base.addons.product.ProductProduct;
-import com.odoo.base.addons.res.ResPartner;
 import com.odoo.core.orm.ODataRow;
 import com.odoo.core.orm.OModel;
 import com.odoo.core.orm.OValues;
@@ -46,7 +44,6 @@ import com.odoo.core.rpc.helper.OdooFields;
 import com.odoo.core.rpc.helper.utils.gson.OdooResult;
 import com.odoo.core.support.OdooCompatActivity;
 import com.odoo.core.utils.BitmapUtils;
-import com.odoo.core.utils.IntentUtils;
 import com.odoo.core.utils.OAlert;
 import com.odoo.core.utils.OResource;
 import com.odoo.core.utils.OStringColorUtil;
@@ -61,7 +58,7 @@ public class ProductDetails extends OdooCompatActivity
     private final String KEY_MODE = "key_edit_mode";
     private final String KEY_NEW_IMAGE = "key_new_image";
     private Bundle extras;
-    private ProductProduct product;
+    private ProductProductDao product;
     private ODataRow record = null;
     private ImageView productImage = null;
     private OForm mForm;
@@ -96,10 +93,10 @@ public class ProductDetails extends OdooCompatActivity
             newImage = savedInstanceState.getString(KEY_NEW_IMAGE);
         }
         app = (App) getApplicationContext();
-        product = new ProductProduct(this, null);
+        product = new ProductProductDao(this, null);
         extras = getIntent().getExtras();
         // if (hasRecordInExtra())
-        //    partnerType = Products.Type.valueOf(extras.getString(KEY_PARTNER_TYPE));
+        //    partnerType = ProductList.Type.valueOf(extras.getString(KEY_PARTNER_TYPE));
         if (!hasRecordInExtra())
             mEditMode = true;
         setupToolbar();

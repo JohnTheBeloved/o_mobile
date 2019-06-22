@@ -19,7 +19,8 @@
  */
 package com.odoo.config;
 
-import com.odoo.addons.abirex.products.Products;
+import com.odoo.addons.abirex.products.ProductList;
+import com.odoo.addons.abirex.purchase.PurchaseList;
 import com.odoo.addons.customers.Customers;
 import com.odoo.core.support.addons.AddonsHelper;
 import com.odoo.core.support.addons.OAddon;
@@ -35,6 +36,8 @@ public class Addons extends AddonsHelper {
      * OAddon partners = new OAddon(Partners.class).withSequence(2);
      */
 
-    OAddon products = new OAddon(Products.class);
-    OAddon customers = new OAddon(Customers.class).setDefault();
+    OAddon purchase = new OAddon(PurchaseList.class);
+    OAddon products = new OAddon(ProductList.class);
+    OAddon productCategory = new OAddon(com.odoo.addons.abirex.customer.ProductList.class).setDefault();
+    OAddon customers = new OAddon(Customers.class);
 }

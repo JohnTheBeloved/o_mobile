@@ -8,10 +8,6 @@
     <color name="theme_secondary">#795548</color>
     <color name="theme_secondary_dark">#5D4037</color>
 
-    <color name="colorPrimary">@color/theme_primary</color>
-    <color name="colorPrimaryDark">@color/theme_primary_dark</color>
-    <color name="colorAccent">@color/theme_accent</color>
-
     <!-- Drawer Properties -->
     <dimen name="drawerAvatarWidthHeight">80dp</dimen>
 

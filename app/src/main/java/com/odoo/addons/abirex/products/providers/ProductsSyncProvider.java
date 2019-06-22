@@ -19,7 +19,7 @@
  */
 package com.odoo.addons.abirex.products.providers;
 
-import com.odoo.base.addons.product.ProductProduct;
+import com.odoo.base.addons.abirex.dao.ProductProductDao;
 import com.odoo.core.orm.provider.BaseModelProvider;
 
 public class ProductsSyncProvider extends BaseModelProvider {
@@ -27,6 +27,6 @@ public class ProductsSyncProvider extends BaseModelProvider {
 
     @Override
     public String authority() {
-        return ProductProduct.AUTHORITY;
+        return ProductProductDao.AUTHORITY;
     }
 }

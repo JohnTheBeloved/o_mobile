@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/default_8dp"
+    android:paddingLeft="@dimen/default_8dp"
+    android:paddingTop="@dimen/default_8dp"
+    android:paddingBottom="@dimen/default_8dp"
+    android:paddingRight="@dimen/default_16dp"
+    android:paddingEnd="@dimen/default_16dp"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_8dp"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_purchase_time"
+                    android:text="@string/stub_purchase_from_3_vendors"
+                    android:textAppearance="@style/ListTitleText"
+                    style="@style/ListTitleLayout"/>
+                <TextView
+                    android:id="@+id/no_of_vendors"
+                    android:text="@string/stub_thursday_7th_april_2019"
+                    android:textAppearance="@style/ListSubtitleText"
+                    style="@style/ListSubtitleLayout"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/default_8dp"
+            android:layout_marginLeft="@dimen/default_8dp"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_no_of_products"
+                android:text="@string/stub_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_total_amount"
+                android:text="@string/stub_5000_00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
